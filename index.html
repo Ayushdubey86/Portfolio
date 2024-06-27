@@ -44,12 +44,11 @@
         }
 
         header nav ul li a:hover {
-            color: #ff6347;
+            color: #b324e2;
         }
 
         section {
             padding: 4rem 2rem;
-          /* //  text-align: center; */
         }
 
         section:nth-of-type(even) {
@@ -59,12 +58,50 @@
         h1 {
             margin-bottom: 1rem;
             font-size: 2.5rem;
+            text-align: center;
         }
 
         p {
-            /* max-width: 600px; */
-            margin: 0 auto 2rem;
             font-size: 1.1rem;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skills-column {
+            flex: 0 0 48%;
+        }
+
+        .skill {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-name {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-bar {
+            position: relative;
+            background: #e0e0e0;
+            border-radius: 25px;
+            overflow: hidden;
+            height: 25px;
+        }
+
+        .skill-bar span {
+            display: block;
+            height: 100%;
+            border-radius: 25px;
+            background: #791602;
         }
 
         footer {
@@ -80,85 +117,124 @@
         footer p {
             margin: 0;
         }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#contact">Ayush Dubey</li>
+                <li><a href="#contact">Ayush Dubey</a></li>
                 <li style="margin-left: 600px;"><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Reach Out</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
-     
         <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.8;">
-            "I am an entrepreneur at heart, driven by passion and innovation. With a strong background in coding, I thrive on solving complex problems and creating impactful solutions. Beyond the tech world, I find peace in the ocean's waves and joy in the pages of a good book, constantly seeking new knowledge and inspiration."        </p>
+            "Hi, I am Ayush Dubey. An entrepreneur at heart, driven by passion and innovation. With a strong background in coding, I thrive on solving complex problems and creating impactful solutions. Beyond the tech world, I find peace in the ocean's waves and joy in the pages of a good book, constantly seeking new knowledge and inspiration."
+        </p>
     </section>
 
-    
-
-    <section id="experience" style=" background: #f4f4f4;">
-    
-        <div style=" margin: 0 auto; text-align: left;">
-            <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Capgemini</h2>
-            
-            <div style="margin-bottom: 2rem;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Project Name: Stellantis</h3>
-                <p style="margin-bottom: 0.5rem;">
-                    <strong>Role:</strong> Full Stack Developer <span style="float: right;">August 2022 - December 2023</span>
-                </p>
-                <ul style="margin-left: 20px; list-style-type: disc;">
-                    <li>Actively participated in client engagements as a Java Full Stack Developer.</li>
-                    <li>Integral member of a high-performing, 9-member agile team.</li>
-                    <li>Developed applications using Spring Boot, Jenkins, and SonarQube, while collaborating on frontend development with Angular.</li>
-                    <li>Maintained continuous communication with the client to ensure alignment with project goals.</li>
-                    <li>Enforced standardized coding structures and conducted thorough code reviews to ensure high-quality deliverables.</li>
-                </ul>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skills-column">
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="skill-bar">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Angular</div>
+                    <div class="skill-bar">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">ReactJs</div>
+                    <div class="skill-bar">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Data Structure and Algorithm</div>
+                    <div class="skill-bar">
+                        <span style="width: 70%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">SpringBoot</div>
+                    <div class="skill-bar">
+                        <span style="width: 70%;"></span>
+                    </div>
+                </div>
             </div>
-    
-            <div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Project Name: Mercedes</h3>
-                <p style="margin-bottom: 0.5rem;">
-                    <strong>Role:</strong> Full Stack Developer <span style="float: right;">January 2023-Present</span>
-                </p>                <ul style="margin-left: 20px; list-style-type: disc;">
-                    <li>Led client engagements as a Full Stack Developer.</li>
-                    <li>Integral part and leader of a high-performing, 25-member agile team.</li>
-                    <li>Developed applications using Spring Boot and Angular, collaborating on backend development.</li>
-                    <li>Worked on-site at the client location, maintaining continuous communication to ensure project success.</li>
-                    <li>Enforced standardized coding practices and conducted thorough code reviews to maintain code quality and consistency.</li>
-                    <li>Improved team efficiency and brought a Red project back to life.</li>
-                </ul>
+            <div class="skills-column">
+                <div class="skill">
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-bar">
+                        <span style="width: 65%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">DevOps</div>
+                    <div class="skill-bar">
+                        <span style="width: 60%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">NodeJs</div>
+                    <div class="skill-bar">
+                        <span style="width: 60%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">HTML/CSS/JavaScript</div>
+                    <div class="skill-bar">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">AWS</div>
+                    <div class="skill-bar">
+                        <span style="width: 60%;"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <section id="projects">
         <h1>Personal Projects</h1>
-
         <p>Here are few personal and mini projects.</p>
         <a href="https://axukgpzziiexehtphqtdlq.on.drv.tw/www.breakoutGame.gme/">Breakout Game</a> <br>
         <a href="https://axukgpzziiexehtphqtdlq.on.drv.tw/www.hangman.blog/">Hangman Game</a><br>
-        <a href="https://axukgpzziiexehtphqtdlq.on.drv.tw/www.Relaxer.app/">Relaxer (Therapeutic) </a>
-    
+        <a href="https://axukgpzziiexehtphqtdlq.on.drv.tw/www.Relaxer.app/">Relaxer (Therapeutic)</a>
     </section>
 
     <section id="contact">
         <h1>Reach Out</h1>
-        <p>Email: <a href="mailto:dubeyayush1687@google.com">dubeyayush1687@google.com</a></p>
-        <p>Phone: <a href="tel:+91 9326352966">+91 9326352966</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/ayush-dubey-250614169/" target="_blank">Ayush Dubey</a></p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:dubeyayush1687@google.com">dubeyayush1687@google.com</a></p>
+            <p>Github: <a href="https://github.com/Ayushdubey86">More Projects</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ayush-dubey-250614169/" target="_blank">Ayush Dubey</a></p>
+
+        </div>
     </section>
-    
 
     <footer>
-        <p style="margin-left: 70%; font-size: small;">&copy; 2024 Ayush Dubey. All rights reserved.</p>
+        <p style="margin-left: 70%; font-size: small;">&copy; 2024 Ayush Dubey</p>
     </footer>
 </body>
 </html>
-
