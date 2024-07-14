@@ -44,7 +44,7 @@
         }
 
         header nav ul li a:hover {
-            color: #b324e2;
+            color: white;
         }
 
         section {
@@ -101,7 +101,7 @@
             display: block;
             height: 100%;
             border-radius: 25px;
-            background: #791602;
+            background: rgb(8, 1, 78);;
         }
 
         footer {
@@ -123,6 +123,68 @@
             flex-direction: column;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        form input[type="email"],form input[type="tel"],
+        form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background: black;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: rgb(8, 1, 78);
+        }
+
+        .social-links {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links p {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
@@ -217,27 +279,32 @@
 
     <section id="projects">
         <h1>Personal Projects</h1>
-        <p>Here are few personal and mini projects.</p>
-        <a href="https://axukgpzziiexehtphqtdlq.on.drv.tw/www.hangman.blog/" target="_blank">
-        <img src="images\hangman.jpg" alt="hangman Image"  style="width: 25%; height: 280px;"></a>
-        <a href="https://axukgpzziiexehtphqtdlq.on.drv.tw/www.breakoutGame.gme/" target="_blank">
-        <img src="images\breakout.jpg" alt="Breakout Game Image" style="width: 25%; height: 280px; margin-left: 150px;" ></a>
-        <a href="https://axukgpzziiexehtphqtdlq.on.drv.tw/www.Relaxer.app/" target="_blank">
-        <img src="images\Relaxer.jpg" alt="Relaxer App" style="width: 25%; height: 280px;margin-left: 140px" > </a>
-        <br>
-        <a style="font-family: Arial, sans-serif;" target="_blank">Hangman Game</a>
-        <a style="font-family: Arial, sans-serif; margin-left: 430px;" target="_blank">Breakout Game</a>
-        <a style="font-family: Arial, sans-serif; margin-left: 330px;" target="_blank">Relaxer (Therapeutic)</a>
+        <p>Here is the link for few personal and mini projects. <a href="https://ayushdubey86.github.io/Mini-Projects/" target="_blank">Link</a></p>
     </section>
 
     <section id="contact">
         <h1>Reach Out</h1>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:dubeyayush1687@google.com">dubeyayush1687@google.com</a></p>
-            <p>Github: <a href="https://github.com/Ayushdubey86" target="_blank">More Projects</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ayush-dubey-250614169/" target="_blank">Ayush Dubey</a></p>
-
+        <div class="social-links">
+            <p>Connect with me on:</p>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+            <a href="https://www.linkedin.com/in/ayush-dubey-250614169/" target="_blank">LinkedIn</a> |
+            <a href="images/Ayush Dubey Resume Final.pdf" target="_blank">Download Resume</a>
         </div>
+        <form action="https://formspree.io/f/xyzgzjez" method="POST">
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+            <label >
+                Phone Number
+                <input type="tel" name="Phone" required>
+            </label>
+            <label>
+                Message:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
