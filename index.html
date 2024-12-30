@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="google-site-verification" content="YepHBboRAUjl6e6jE5U9H79tPnbro6vHav_4r9S2dnw" />
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDWRV0KM74"></script>
-    
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDWRV0KM74"></script>
 
-  gtag('config', 'G-VDWRV0KM74');
-</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-VDWRV0KM74');
+    </script>
     <meta name="google-adsense-account" content="ca-pub-2224789597562880">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Dubey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -116,7 +121,8 @@
             display: block;
             height: 100%;
             border-radius: 25px;
-            background: rgb(8, 1, 78);;
+            background: rgb(8, 1, 78);
+            ;
         }
 
         footer {
@@ -155,7 +161,8 @@
             font-weight: bold;
         }
 
-        form input[type="email"], form input[type="tel"],
+        form input[type="email"],
+        form input[type="tel"],
         form textarea {
             width: 100%;
             padding: 0.5rem;
@@ -214,155 +221,311 @@
             }
         }
 
-        @media (max-width: 480px) {
-            header nav ul {
-                flex-direction: column;
-                gap: 1rem;
+
+            @media (max-width: 576px) {
+                .wrapper {
+                    display: none;
+                }
             }
 
-            header nav ul li {
-                margin: 0;
+            @media (min-width: 576px) {
+                .mobile {
+                    display: none;
+                }
+
             }
 
-            header nav ul li a {
-                font-size: 1rem;
+            .menu.links {
+                display: flex;
+                justify-content: center; /* Centers the links horizontally */
+                gap: 20px; /* Adds spacing between the links */
+                list-style: none; /* Removes bullet points */
+                padding: 0; /* Removes extra padding */
+                margin: 0; /* Removes extra margin */
             }
 
-            h1 {
-                font-size: 2rem;
+            .namm{
+                color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.6rem;
             }
 
-            p {
-                font-size: 1rem;
+            .rush{
+                padding: 2rem 2rem;
+                background-color: ghostwhite;
             }
 
-            .skill-name {
-                font-size: 1rem;
-            }
-        }
     </style>
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#contact">Ayush Dubey</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#contact">Ayush Dubey</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section id="about">
+        <section id="about">
+            <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+                "Hi, I am Ayush Dubey. An entrepreneur at heart, driven by passion and innovation. With a strong
+                background in coding, I thrive on solving complex problems and creating impactful solutions. Beyond the
+                tech world, I find peace in the ocean's waves and joy in the pages of a good book, constantly seeking
+                new knowledge and inspiration."
+            </p>
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <div class="skill">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Angular</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">ReactJs</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Data Structure and Algorithm</div>
+                        <div class="skill-bar">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">SpringBoot</div>
+                        <div class="skill-bar">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <div class="skill">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-bar">
+                            <span style="width: 65%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">DevOps</div>
+                        <div class="skill-bar">
+                            <span style="width: 60%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">NodeJs</div>
+                        <div class="skill-bar">
+                            <span style="width: 60%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">HTML/CSS/JavaScript</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-bar">
+                            <span style="width: 60%;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>Personal Projects</h1>
+            <p>Here is the link for few personal and mini projects. <a
+                    href="https://ayushdubey86.github.io/Mini-Projects/" target="_blank">Link</a></p>
+        </section>
+
+        <section id="contact">
+            <h1>Reach Out</h1>
+            <div class="social-links">
+                <p>Connect with me on:</p>
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+                <a href="https://www.linkedin.com/in/ayush-dubey-250614169/" target="_blank">LinkedIn</a> |
+                <a href="images/Ayush Dubey Resume Final.pdf" target="_blank">Download Resume</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="card" style="max-width: 500px;">
+                    <div class="card-body text-center">
+                        <p class="card-text m-0">Reach Out or Whatsapp us on +91 9326352966</p>
+                    </div>
+                </div>
+            </div>
+            <form action="https://formspree.io/f/xyzgzjez" method="POST">
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Phone Number
+                    <input type="tel" name="Phone" required>
+                </label>
+                <label>
+                    Message:
+                    <textarea name="message" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <p style="margin-left: 70%; font-size: small;">&copy; 2024 Ayush Dubey</p>
+        </footer>
+
+    </div>
+
+    <div class="mobile">
+        <header>
+            <nav>
+                <ul class="menu title">
+                    <li><a class="namm" href="#contact">Ayush Dubey</a></li>
+                </ul>
+                <!-- <ul class="menu links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> -->
+            </nav>
+        </header>
+
         <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto; line-height: 1.8;">
-            "Hi, I am Ayush Dubey. An entrepreneur at heart, driven by passion and innovation. With a strong background in coding, I thrive on solving complex problems and creating impactful solutions. Beyond the tech world, I find peace in the ocean's waves and joy in the pages of a good book, constantly seeking new knowledge and inspiration."
+            "Hi, I am Ayush Dubey. An entrepreneur at heart, driven by passion and innovation. With a strong
+            background in coding, I thrive on solving complex problems and creating impactful solutions. Beyond the
+            tech world, I find peace in the ocean's waves and joy in the pages of a good book, constantly seeking
+            new knowledge and inspiration."
         </p>
-    </section>
 
-    <section id="skills">
-        <h1>Skills</h1>
-        <div class="skills-container">
-            <div class="skills-column">
-                <div class="skill">
-                    <div class="skill-name">Java</div>
-                    <div class="skill-bar">
-                        <span style="width: 80%;"></span>
+        <section class="rush" id="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <div class="skill">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Angular</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">ReactJs</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Data Structure and Algorithm</div>
+                        <div class="skill-bar">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">SpringBoot</div>
+                        <div class="skill-bar">
+                            <span style="width: 70%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-bar">
+                            <span style="width: 65%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">DevOps</div>
+                        <div class="skill-bar">
+                            <span style="width: 60%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">NodeJs</div>
+                        <div class="skill-bar">
+                            <span style="width: 60%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">HTML/CSS/JavaScript</div>
+                        <div class="skill-bar">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-bar">
+                            <span style="width: 60%;"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <div class="skill-name">Angular</div>
-                    <div class="skill-bar">
-                        <span style="width: 80%;"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">ReactJs</div>
-                    <div class="skill-bar">
-                        <span style="width: 80%;"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Data Structure and Algorithm</div>
-                    <div class="skill-bar">
-                        <span style="width: 70%;"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">SpringBoot</div>
-                    <div class="skill-bar">
-                        <span style="width: 70%;"></span>
-                    </div>
+               
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1>Personal Projects</h1>
+            <p>Here is the link for few personal and mini projects. <a
+                    href="https://ayushdubey86.github.io/Mini-Projects/" target="_blank">Link</a></p>
+        </section>
+
+        <section id="contact">
+            <h1>Reach Out</h1>
+            <div class="social-links">
+                <p>Connect with me on:</p>
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+                <a href="https://www.linkedin.com/in/ayush-dubey-250614169/" target="_blank">LinkedIn</a> |
+                <a href="images/Ayush Dubey Resume Final.pdf" target="_blank">Download Resume</a>
+            </div>
+
+            <div class="card">
+                <div class="card-body text-center">
+                    <p class="card-text m-0">Reach Out or Whatsapp us on +91 9326352966</p>
                 </div>
             </div>
-            <div class="skills-column">
-                <div class="skill">
-                    <div class="skill-name">SQL</div>
-                    <div class="skill-bar">
-                        <span style="width: 65%;"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">DevOps</div>
-                    <div class="skill-bar">
-                        <span style="width: 60%;"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">NodeJs</div>
-                    <div class="skill-bar">
-                        <span style="width: 60%;"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">HTML/CSS/JavaScript</div>
-                    <div class="skill-bar">
-                        <span style="width: 80%;"></span>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">AWS</div>
-                    <div class="skill-bar">
-                        <span style="width: 60%;"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h1>Personal Projects</h1>
-        <p>Here is the link for few personal and mini projects. <a href="https://ayushdubey86.github.io/Mini-Projects/" target="_blank">Link</a></p>
-    </section>
-
-    <section id="contact">
-        <h1>Reach Out</h1>
-        <div class="social-links">
-            <p>Connect with me on:</p>
-            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
-            <a href="https://www.linkedin.com/in/ayush-dubey-250614169/" target="_blank">LinkedIn</a> |
-            <a href="images/Ayush Dubey Resume Final.pdf" target="_blank">Download Resume</a>
-        </div>
-        <form action="https://formspree.io/f/xyzgzjez" method="POST">
-            <label>
-                Email
-                <input type="email" name="email" required>
-            </label>
-            <label>
-                Phone Number
-                <input type="tel" name="Phone" required>
-            </label>
-            <label>
-                Message:
-                <textarea name="message" required></textarea>
-            </label>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p style="margin-left: 70%; font-size: small;">&copy; 2024 Ayush Dubey</p>
-    </footer>
+            <form action="https://formspree.io/f/xyzgzjez" method="POST">
+                <label>
+                    Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Phone Number
+                    <input type="tel" name="Phone" required>
+                </label>
+                <label>
+                    Message:
+                    <textarea name="message" required></textarea>
+                </label>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    
 </body>
+
 </html>
